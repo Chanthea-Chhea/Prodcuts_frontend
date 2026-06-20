@@ -23,7 +23,7 @@ type CategoryResponse = {
   errors?: Record<string, string[]>
 }
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api'
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://backend.crud.site/api'
 
 const categories = ref<Category[]>([])
 const isLoading = ref(false)
